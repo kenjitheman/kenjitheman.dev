@@ -14,7 +14,7 @@ import Paragraph from "../components/paragraph";
 import Layout from "../components/layouts/article";
 import Section from "../components/section";
 import Image from "next/image";
-import { FaGithub, FaTelegram } from "react-icons/fa6";
+import { FaGithub, FaTelegram, FaXTwitter, FaLinkedin, FaRedditAlien } from "react-icons/fa6";
 
 const ProfileImage = chakra(Image, {
     shouldForwardProp: (prop) => ["width", "height", "src", "alt"].includes(prop),
@@ -23,7 +23,7 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
     <Layout
         title="kenjitheman"
-        description="software developer"
+        description="Software developer"
     >
         <Container
             maxW="container.md"
@@ -49,7 +49,7 @@ const Home = () => (
                     <Heading as="h2" variant="page-title">
                         kenjitheman
                     </Heading>
-                    <p>software developer</p>
+                    <p>Software developer</p>
                 </Box>
                 <Box
                     flexShrink={0}
@@ -80,16 +80,18 @@ const Home = () => (
 
             <Section delay={0.1}>
                 <Paragraph>
-                    Curious about my tech expertise and preferences? Well, here's a glimpse into my world:
-                </Paragraph>
-                <Paragraph>
-                    In my toolbox, i have a dynamic array of languages, frameworks and libraries, each serving a unique purpose of course.
-                    Btw I have a sleek neovim setup that's nothing short of a work of art
-                    and, as a devoted arch linux user. I've meticulously curated my dotfiles for optimal performance and aesthetics.
+                    Just a guy, an enthusiast on a mission to elevate my developer workflow, construct high-performance projects, delve into the intricacies of memory, and ultimately engineer remarkable software. Wondering about my tech expertise and preferences? Here's a glimpse into my realm:
                 </Paragraph>
                 <br />
                 <Paragraph>
-                    My days are filled with lines of code, debugging sessions, and the exhilarating satisfaction of solving problems and of course learning and exploring more and more.
+                    My toolkit is a dynamic amalgamation of various languages, frameworks, and libraries, each meticulously selected for its distinct purpose. Notably, btw, my Neovim setup on Arch Linux is a sleek masterpiece, with dotfiles curated to perfection for both optimal performance and aesthetics.
+                </Paragraph>
+                <br />
+                <Paragraph>
+                    My days unfold with the rhythm of lines of code, debugging sessions, and the gratification of solving challenges, all while continually learning and exploring new horizons. I approach technology with passion, finding joy and fun in every aspect.
+                </Paragraph>
+                <Paragraph>
+                    — Member of the #hate_js club.
                 </Paragraph>
             </Section>
             <Section delay={0.2}>
@@ -116,7 +118,7 @@ const Home = () => (
                         target="_blank"
                         color={useColorModeValue("black", "purple.400")}
                     >
-                        coding, neovim, programming, linux, software engineering, software, CS, software development, dotfiles
+                        Coding, neovim, programming, linux, software engineering, software, CS, software development, dotfiles
                     </Link>
                     ,{"  "}
                     <Link
@@ -136,7 +138,7 @@ const Home = () => (
                     fontSize="1.5rem"
                     color={useColorModeValue("black", "purple.400")}
                 >
-                    me on the web:
+                    Me on the web:
                 </Heading>
                 <List style={{ textAlign: "center" }}>
                     <ListItem style={{ paddingBottom: "1%" }}>
@@ -168,6 +170,48 @@ const Home = () => (
                         </Link>
                     </ListItem>
                     <ListItem style={{ paddingBottom: "1%" }}>
+                        <Link href="https://twitter.com/kenjith3man" target="_blank">
+                            <Button
+                                variant="ghost"
+                                color={useColorModeValue("black", "purple.400")}
+                                p={7}
+                                rounded="2xl"
+                                leftIcon={<FaXTwitter size={30} />}
+                                fontSize="1.2rem"
+                            >
+                                @kenjith3man
+                            </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem style={{ paddingBottom: "1%" }}>
+                        <Link href="https://www.reddit.com/user/kenjith3man" target="_blank">
+                            <Button
+                                variant="ghost"
+                                color={useColorModeValue("black", "purple.400")}
+                                p={7}
+                                rounded="2xl"
+                                leftIcon={<FaRedditAlien size={30} />}
+                                fontSize="1.2rem"
+                            >
+                                @kenjith3man
+                            </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem style={{ paddingBottom: "1%" }}>
+                        <Link href="https://www.linkedin.com/in/kenjitheman/" target="_blank">
+                            <Button
+                                variant="ghost"
+                                color={useColorModeValue("black", "purple.400")}
+                                p={7}
+                                rounded="2xl"
+                                leftIcon={<FaLinkedin size={30} />}
+                                fontSize="1.2rem"
+                            >
+                                @kenjitheman
+                            </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem style={{ paddingBottom: "1%" }}>
                         <Link href="mailto:kenjith3man@gmail.com" target="_blank">
                             <Button
                                 variant="ghost"
@@ -182,10 +226,9 @@ const Home = () => (
                         </Link>
                     </ListItem>
                 </List>
-
             </Section>
         </Container>
-    </Layout>
+    </Layout >
 );
 
 export default Home;
