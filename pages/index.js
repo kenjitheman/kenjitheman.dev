@@ -91,7 +91,7 @@ const Home = () => (
                     My days unfold with the rhythm of lines of code, debugging sessions, and the gratification of solving challenges, all while continually learning and exploring new horizons. I approach technology with passion, finding joy and fun in every aspect.
                 </Paragraph>
                 <Paragraph>
-                    — Member of the #hate_js club.
+                    — Member of the #no_js club.
                 </Paragraph>
             </Section>
             <Section delay={0.2}>
