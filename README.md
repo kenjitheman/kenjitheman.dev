@@ -1,5 +1,3 @@
-# kenjitheman.dev
-
 ## Installation
 
 ```sh
